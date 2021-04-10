@@ -16,7 +16,7 @@ function inst(){
 }
 
 echo -en '\e[1;37;49mUpdating...\e[0m'
-echo -e '\e[2;30;49m'
+echo -e '\e[2;39;49m'
 sudo apt update -y
 echo -e '\e[1;37;49mUpdated\e[0m'
 echo

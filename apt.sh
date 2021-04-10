@@ -29,3 +29,10 @@ for file in $(ls installlist.txt)
 do
   inst $file
 done
+
+echo -en '\e[1;37;49mInstalling Pi-Apps...\e[0m'
+echo -e '\e[2;37;49m'
+wget -qO- https://raw.githubusercontent.com/Botspot/pi-apps/master/install | bash
+echo -e '\e[1;37;49mInstalled\e[0m'
+
+echo 'Finished!'

@@ -2,7 +2,7 @@
 
 function inst(){
   echo -en '\e[1;37;49mInstalling $1...\e[0m'
-  echo -e '\e[2;37;49m'
+  echo -e '\e[0;37;49m'
   sudo apt -y install $1
   echo -e '\e[1;37;49mInstalled $1\e[0m'
   echo -en '\e[1;37;49mChecking command $1...\e[0m'

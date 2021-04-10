@@ -13,3 +13,7 @@ wavemon
 fonts-noto
 fcitx-mozc
 apache2
+simplescreenrecorder
+kdenlive
+gnome-screenshot
+gimp

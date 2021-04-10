@@ -10,3 +10,6 @@ gparted
 zenity
 code
 wavemon
+fonts-noto
+fcitx-mozc
+apache2

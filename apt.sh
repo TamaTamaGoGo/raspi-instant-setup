@@ -25,10 +25,14 @@ echo -e '\e[2;37;49m'
 sudo apt upgrade -y
 echo -e '\e[1;37;49mUpgraded\e[0m'
 
+wget https://raw.githubusercontent.com/TamaTamaGoGo/raspi-instant-setup/master/installist.txt
+
 for file in $(ls installlist.txt)
 do
   inst $file
 done
+
+rm -rf installist.txt
 
 echo -en '\e[1;37;49mInstalling Pi-Apps...\e[0m'
 echo -e '\e[2;37;49m'

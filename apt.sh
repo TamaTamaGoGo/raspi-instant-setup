@@ -27,7 +27,7 @@ echo -e '\e[1;37;49mUpgraded\e[0m'
 
 wget https://raw.githubusercontent.com/TamaTamaGoGo/raspi-instant-setup/master/installist.txt
 
-for file in $(ls installlist.txt)
+for file in $(ls installist.txt)
 do
   inst $file
 done

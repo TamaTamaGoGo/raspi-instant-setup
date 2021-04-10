@@ -35,4 +35,9 @@ echo -e '\e[2;37;49m'
 wget -qO- https://raw.githubusercontent.com/Botspot/pi-apps/master/install | bash
 echo -e '\e[1;37;49mInstalled\e[0m'
 
+echo -en '\e[1;37;49mInstalling Node.js...\e[0m'
+echo -e '\e[2;37;49m'
+curl -L https://git.io/v7kPb | bash
+echo -e '\e[1;37;49mInstalled\e[0m'
+
 echo 'Finished!'

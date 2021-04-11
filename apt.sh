@@ -7,7 +7,7 @@ function inst(){
   echo -e '\e[1;37;49mInstalled '$1'\e[0m'
   echo -en '\e[1;37;49mChecking command '$1'...\e[0m'
   echo -e '\e[2;37;49m'
-  if [ -v $(which $1) ]; then
+  if [ -n $(which $1) ]; then
     echo "You can use $1"
   else
     echo "You can't use $1"

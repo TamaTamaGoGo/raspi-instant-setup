@@ -17,3 +17,6 @@ simplescreenrecorder
 kdenlive
 gnome-screenshot
 gimp
+certbot
+python-certbot-apache
+miniupnpc

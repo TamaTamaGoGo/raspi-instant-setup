@@ -24,5 +24,8 @@ sudo ln -s /usr/local/lib/heroku/bin/heroku /usr/local/bin/heroku
 heroku -v
 rm -rf heroku-linux-arm.tar.gz
 
+sudo npm install -g nodemon
+sudo npm install -g forever
+
 echo 'If you not using berryboot and you want to run swap, please run'
 echo 'sudo systemctl enable dphys-swapfile'

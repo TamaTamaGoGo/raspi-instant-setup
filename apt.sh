@@ -8,9 +8,9 @@ function inst(){
   echo -en '\e[1;37;49mChecking command '$1'...\e[0m'
 ##  echo -e '\e[2;37;49m'
   if [ -n $(which $1) ]; then
-    echo "You can use $1"
+    echo "OK"
   else
-    echo "You can't use $1"
+    echo "NO"
   fi
   echo
 }

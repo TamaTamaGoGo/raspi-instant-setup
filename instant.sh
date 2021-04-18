@@ -27,5 +27,14 @@ rm -rf heroku-linux-arm.tar.gz
 sudo npm install -g nodemon
 sudo npm install -g forever
 
+sudo wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
+echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/php.list
+sudo apt update
+sudo apt install -y php8.0-common php8.0-cli
+sudo apt install -y php8.0-curl php8.0-gd php8.0-mbstring php8.0-xml php8.0-zip
+sudo apt install -y php8.0-mysql
+sudo apt install -y libapache2-mod-php8.0
+sudo service apache2 restart
+
 echo 'If you not using berryboot and you want to run swap, please run'
 echo 'sudo systemctl enable dphys-swapfile'

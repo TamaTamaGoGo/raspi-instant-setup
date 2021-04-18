@@ -18,4 +18,4 @@ start colortest.sh
 start apt.sh
 
 echo 'If you not using berryboot and you want to run swap, please run'
-echo 'sudo systemctl enable dphys-swapfile && sudo systemctl start dphys-swapfile'
+echo 'sudo systemctl enable dphys-swapfile'
